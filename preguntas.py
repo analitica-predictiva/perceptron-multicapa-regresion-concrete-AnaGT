@@ -154,8 +154,8 @@ def pregunta_05():
     estimator.fit(x_train, y_train)  #
 
     # Pronostique para las muestras de entrenamiento y validacion
-    y_train_pred =  gridSearchCV.predict(x_train)  
-    y_test_pred =  gridSearchCV.predict(x_test)
+    y_train_pred =  gridsearchcv.predict(x_train)  
+    y_test_pred =  gridsearchcv.predict(x_test)
 
     # Calcule el error cuadrático medio de las muestras
     mse_train = mean_squared_error(  
