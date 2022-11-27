@@ -79,11 +79,11 @@ def pregunta_03():
         steps=[
             (
                 "minmaxscaler",
-                MinMaxScaler(),  
+                MinMaxScaler()  
             ),
             (
                 "mlpregressor",
-                MLPRegressor(),  
+                MLPRegressor()  
             ),
         ],
     )
