@@ -83,7 +83,14 @@ def pregunta_03():
             ),
             (
                 "mlpregressor",
-                MLPRegressor()  
+                MLPRegressor(
+                hidden_layer_sizes=(8,),
+                activation="relu",
+                learning_rate="adaptive",
+                momentum=0.9,
+                learning_rate_init=0.01,
+                max_iter=5000,
+            )  
             ),
         ],
     )
