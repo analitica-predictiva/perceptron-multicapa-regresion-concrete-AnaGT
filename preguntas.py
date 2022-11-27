@@ -83,7 +83,7 @@ def pregunta_03():
             ),
             (
                 "mlpregressor",
-                MLPRegressor(),  
+                MLPRegressor(verbose=False),  
             ),
         ],
     )
@@ -110,7 +110,7 @@ def pregunta_04():
     #   * Un máximo de 5000 iteraciones
     #   * Use parada temprana
 
-    param_grid = {
+    param_grid = [{
         'hidden_layer_sizes':[(8,)],  
         'activation':['relu'],  
         'learning_rate':['adaptive'],  
@@ -118,7 +118,7 @@ def pregunta_04():
         'learning_rate_init':[0.01, 0.05, 0.1],  
         'max_iter':[5000],  
         'early_stopping':[True],  
-    }
+    },]
 
     estimator = pregunta_03()
 
