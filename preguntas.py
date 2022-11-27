@@ -111,13 +111,13 @@ def pregunta_04():
     #   * Use parada temprana
 
     param_grid = {
-        hidden_layer_sizes:(8,),  
-        activation: 'relu',  
-        learning_rate:'adaptive',  
-        momentum:[0.7,0.8,0.9],  
-        learning_rate_init:[0.01, 0.05, 0.1],  
-        max_iter:5000,  
-        early_stopping:True,  
+        'hidden_layer_sizes':[(8,)],  
+        'activation':['relu'],  
+        'learning_rate':['adaptive'],  
+        'momentum':[0.7,0.8,0.9],  
+        'learning_rate_init':[0.01, 0.05, 0.1],  
+        'max_iter':[5000],  
+        'early_stopping':[True],  
     }
 
     estimator = pregunta_03()
