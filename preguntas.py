@@ -110,15 +110,15 @@ def pregunta_04():
     #   * Un máximo de 5000 iteraciones
     #   * Use parada temprana
 
-    param_grid = [{
-        'hidden_layer_sizes':[(8,)],  
-        'activation':['relu'],  
-        'learning_rate':['adaptive'],  
+    param_grid = {
+        'hidden_layer_sizes':(8,),  
+        'activation':'relu',  
+        'learning_rate':'adaptive',  
         'momentum':[0.7,0.8,0.9],  
         'learning_rate_init':[0.01, 0.05, 0.1],  
-        'max_iter':[5000],  
-        'early_stopping':[True],  
-    },]
+        'max_iter':5000,  
+        'early_stopping':True,  
+    }
 
     estimator = pregunta_03()
 
